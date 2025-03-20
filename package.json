@@ -1,0 +1,81 @@
+{
+  "name": "cascade-experiments",
+  "directories": {
+    "src": "src",
+    "test": "test",
+    "lib": "lib"
+  },
+  "version": "1.0.4",
+  "description": "React UI library",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "bin"
+  ],
+  "author": {
+    "name": "Kousigan Moni"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^5.16.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "pixel-pulse": "./bin/cli.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.26.0",
+    "@chromatic-com/storybook": "^3.2.3",
+    "@mdx-js/loader": "^2.3.0",
+    "@mdx-js/react": "^2.3.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@storybook/addon-designs": "^8.0.4",
+    "@storybook/addon-essentials": "^8.5.0",
+    "@storybook/addon-interactions": "^8.5.0",
+    "@storybook/addon-onboarding": "^8.5.0",
+    "@storybook/addon-webpack5-compiler-swc": "^2.0.0",
+    "@storybook/blocks": "^8.5.0",
+    "@storybook/react": "^8.5.0",
+    "@storybook/react-webpack5": "^8.5.0",
+    "@storybook/test": "^8.5.0",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "babel-loader": "^9.2.1",
+    "babel-preset-react-app": "^10.0.1",
+    "css-loader": "^7.1.2",
+    "dotenv": "^16.4.7",
+    "rollup": "^2.79.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "storybook": "^8.5.0",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_6db2c07de1d1978"
+  },
+  "dependencies": {
+    "@mui/icons-material": "^5.16.14"
+  }
+}
